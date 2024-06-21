@@ -45,6 +45,7 @@ header {
     flex-direction: column;
     width: 100%;
     gap: 14px;
+    min-height: 40vh;
   }
   .header-content .header-user {
     visibility: hidden;
@@ -102,7 +103,10 @@ header {
 
 @media screen and (max-width: 768px) {
   .main-title {
-    min-height: 80vh;
+    min-height: 60vh;
+  }
+  .main-title h1 {
+    font-size: 24px;
   }
 }
 body {

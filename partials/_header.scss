@@ -42,6 +42,7 @@ header{
         flex-direction: column;
         width: 100%;
         gap: 14px;
+        min-height: 40vh;
         
         .header-user{
             visibility: hidden;
