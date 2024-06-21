@@ -46,14 +46,17 @@ header{
         
         .header-user{
             visibility: hidden;
+            flex: 1;
         }
 
         .btn-header{
             order: 3;
+            flex: 1;
         }
 
         .header-logo{
             order: 1;
+            flex: 1;
         }
     }
 

@@ -49,12 +49,15 @@ header {
   }
   .header-content .header-user {
     visibility: hidden;
+    flex: 1;
   }
   .header-content .btn-header {
     order: 3;
+    flex: 1;
   }
   .header-content .header-logo {
     order: 1;
+    flex: 1;
   }
 }
 .container {
