@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+header {
+  width: 100%;
+  color: #023e8a;
+}
+
+.header-logo img {
+  max-width: 500px;
+  z-index: 99;
+}
+
+.header-button {
+  color: #fff;
+  border: solid 1px #0077b6;
+  background-color: #0077b6;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.btn-header:hover {
+  animation: scaleButton 0.8s alternate infinite;
+}
+
+.header-button:hover {
+  background-color: #023e8a;
+}
+
+@keyframes scaleButton {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+@media screen and (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    width: 100%;
+  }
+  .header-content .header-user {
+    visibility: hidden;
+  }
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 8px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bg-home::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: linear-gradient(to bottom, rgba(237, 234, 239, 0.1), #06121e), url(/assets/strada.jpg);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0px;
+  opacity: 0.9;
+}
+
+.main-title {
+  text-align: center;
+  color: #023e8a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+  min-height: 80vh;
+}
+.main-title h1 {
+  min-height: 60vh;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+body {
+  font-family: "Sora", sans-serif;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: #fff;
+}
+
+button {
+  font-family: "Sora", sans-serif;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+}
+
+svg {
+  width: 100%;
+}
+
+a {
+  cursor: poiner;
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */
