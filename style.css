@@ -112,6 +112,34 @@ header {
     font-size: 24px;
   }
 }
+.agendamentos {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+table {
+  background-color: #fefbff;
+  width: 100%;
+  overflow: hidden;
+  border-collapse: collapse;
+  text-align: center;
+  border-radius: 4px;
+}
+table th {
+  border: 1px solid #000;
+}
+table td {
+  border: 1px solid #000;
+  padding: 4px;
+}
+
+table, th {
+  padding: 8px;
+}
+
 body {
   font-family: "Sora", sans-serif;
   width: 100%;
