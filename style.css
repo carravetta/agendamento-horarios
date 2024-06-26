@@ -102,6 +102,7 @@ header {
   order: 2;
   text-align: center;
   text-transform: uppercase;
+  color: black;
 }
 
 @media screen and (max-width: 768px) {
@@ -118,26 +119,131 @@ header {
   display: flex;
   flex-direction: column;
   gap: 28px;
+  height: 80vh;
 }
 
 table {
-  background-color: #fefbff;
+  background-color: #fff;
   width: 100%;
-  overflow: hidden;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0 10px;
   text-align: center;
   border-radius: 4px;
+  cursor: pointer;
 }
-table th {
-  border: 1px solid #000;
+table tr {
+  background: linear-gradient(0.25turn, #ade8f4, #caf0f8);
 }
-table td {
-  border: 1px solid #000;
-  padding: 4px;
+table tr + tr {
+  margin-top: 10px;
 }
 
 table, th {
+  padding: 12px;
+}
+
+table, th, td {
+  border: none;
+}
+
+input {
+  background-color: #fefbff;
+  font-family: "Sora", sans-serif;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+
+tbody tr {
+  transition: background 0.5s;
+}
+
+tbody tr:hover {
+  background: rgba(0, 119, 182, 0.5);
+}
+
+table th {
+  cursor: default;
+}
+
+footer {
+  background-color: #181c28;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  flex-direction: column;
+  color: #fff;
+  padding: 24px;
+}
+footer img {
+  max-width: 400px;
+}
+footer p {
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  table .hr-saida, .hr-retorno, .th-hr-saida, .th-hr-retorno {
+    display: none;
+  }
+  table {
+    max-width: 400px;
+    font-size: 10px;
+    overflow: hidden;
+  }
+}
+.modal-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 468px;
+  border-radius: 5px;
   padding: 8px;
+  z-index: 999;
+}
+
+dialog {
+  border: none;
+  margin: auto !important;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 29px 0px;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.form-content {
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 468px;
+  padding: 24px;
+  gap: 10px;
+}
+.form-content label {
+  font-weight: bold;
+}
+.form-content .btn-salvar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 8px 0 0;
+}
+.form-content .btn-salvar button, .form-content .btn-salvar a {
+  min-width: 100px;
+  max-width: 100px;
+  padding: 8px;
+  background-color: #fff;
+  border-radius: 4px;
+  font-weight: 800;
+  margin-top: 24px;
+  margin: 0 24px 0px 0;
 }
 
 body {
