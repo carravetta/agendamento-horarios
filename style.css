@@ -130,6 +130,7 @@ table {
   text-align: center;
   border-radius: 4px;
   cursor: pointer;
+  overflow: hidden;
 }
 table tr {
   background: linear-gradient(0.25turn, #ade8f4, #caf0f8);
@@ -160,12 +161,21 @@ tbody tr {
 
 tbody tr:hover {
   background: rgba(0, 119, 182, 0.5);
+  animation: tableTransform 1s forwards;
 }
 
 table th {
   cursor: default;
 }
 
+@keyframes tableTransform {
+  from {
+    transform: scale(1.02);
+  }
+  to {
+    transform: scale(1.02);
+  }
+}
 footer {
   background-color: #181c28;
   display: flex;
@@ -221,7 +231,7 @@ dialog::backdrop {
   display: flex;
   flex-direction: column;
   flex: 1;
-  min-width: 468px;
+  min-width: 290px;
   padding: 24px;
   gap: 10px;
 }
@@ -231,9 +241,8 @@ dialog::backdrop {
 .form-content .btn-salvar {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
-  margin: 0 8px 0 0;
 }
 .form-content .btn-salvar button, .form-content .btn-salvar a {
   min-width: 100px;
@@ -243,7 +252,6 @@ dialog::backdrop {
   border-radius: 4px;
   font-weight: 800;
   margin-top: 24px;
-  margin: 0 24px 0px 0;
 }
 
 body {

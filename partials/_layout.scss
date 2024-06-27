@@ -74,6 +74,7 @@ table{
     text-align: center;
     border-radius: 4px;
     cursor: pointer;
+    overflow: hidden;
     tr{
         //border: 10px solid rgba(255, 255, 255, 0.9);
        // background-color: linear-gradient(#ade8f4, #caf0f8);
@@ -104,11 +105,12 @@ input{
 
 tbody tr{
     transition: background 0.5s;
+  
 }
 
 tbody tr:hover{
     background: rgba(0, 119, 182, 0.5);
-    animation: tableTransform 0.8s;
+    animation: tableTransform 1s forwards; 
 }
 
 table th{
@@ -116,12 +118,13 @@ table th{
 }
 
 @keyframes tableTransform {
+    
     from{
-        table tbody tr{
-            transform: translate(0, 50);
-        }
+            
+            transform: scale(1.02);
     }to{
-        transform: translate(10px, 5px);
+            transform: scale(1.02);
+            
     }
 }
 
@@ -185,7 +188,7 @@ dialog::backdrop{
     display: flex;
     flex-direction: column;
     flex: 1;
-    min-width: 468px;
+    min-width: 290px;
     padding: 24px;
     gap: 10px;
 
@@ -196,10 +199,9 @@ dialog::backdrop{
     .btn-salvar{
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         width: 100%;
-        margin: 0 8px 0 0;
-
+        
         button, a{
             min-width: 100px;
             max-width: 100px;
@@ -208,7 +210,6 @@ dialog::backdrop{
             border-radius: 4px;
             font-weight: 800;
             margin-top: 24px;
-            margin: 0 24px 0px 0;
         }
     }
 }
